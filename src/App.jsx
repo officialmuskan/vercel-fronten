@@ -47,7 +47,7 @@ const App = () => {
 
       if (response.ok) {
         const short = data.shortUrl;
-        const final = short.replace('http://localhost:5000/', BASE_URL)
+        const final = short.replace(BASE_URL, 'http://localhost:5000/')
         setShortUrl(final);
         setMessage('URL shortened successfully!');
         setMessageType('success');
