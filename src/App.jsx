@@ -46,7 +46,9 @@ const App = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setShortUrl(data.shortUrl);
+        const short = data.shortUrl;
+        const final = short.replace('http://localhost:5000/', BASE_URL)
+        setShortUrl(final);
         setMessage('URL shortened successfully!');
         setMessageType('success');
         fetchUrls();
