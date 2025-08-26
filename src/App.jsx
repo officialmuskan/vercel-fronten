@@ -13,7 +13,7 @@ const App = () => {
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState('');
 
-  const BASE_URL = 'http://localhost:5000';
+  const BASE_URL = 'https://vercel-backen-gold.vercel.app/';
 
   useEffect(() => {
     fetchUrls();
